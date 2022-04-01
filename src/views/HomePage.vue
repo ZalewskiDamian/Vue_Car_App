@@ -6,7 +6,7 @@
                <input type="search" class="search__input" placeholder="Szukaj...">
            </div>
            <div class="filters">
-               <v-select :options="['Canada', 'United States']"></v-select>
+               <vue-select searchable :options="[{ color: 'Red' }, { color: 'Green' }]" label-by="color"> </vue-select>
            </div>
        </div>
     </section>
@@ -15,12 +15,15 @@
 <script>
 import Vue from "vue";
 import { useStore } from "vuex";
-import vSelect from "vue-select-3";
+import VueNextSelect from 'vue-next-select'
+import "vue-next-select/dist/index.css";
+
+
 // import { computed, onMounted } from "vue";
 
 export default {
     components: {
-        vSelect
+        'vue-select': VueNextSelect,
     },
     mixins: [],
     setup() {
