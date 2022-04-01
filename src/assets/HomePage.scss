@@ -1,0 +1,18 @@
+.search {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+
+    &__input {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        padding: 15px 20px 15px 50px;
+        border-radius: 8px;
+        font-family: 'Montserrat', sans-serif;
+        background-image: url('../assets/images/search.png');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+    }
+}
