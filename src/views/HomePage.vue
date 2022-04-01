@@ -65,14 +65,23 @@
                    <button type="button" class="filters__searchBtn">Szukaj</button>
                </div>
            </div>
+           <div class="cars-wrapper">
+               <Card />
+               <Card />
+               <Card />
+               <Card />
+               <Card />
+               <Card />
+           </div>
        </div>
     </section>
 </template>
 
 <script>
 import { useStore } from "vuex";
-import VueNextSelect from 'vue-next-select'
+import VueNextSelect from 'vue-next-select';
 import "vue-next-select/dist/index.css";
+import Card from '../components/Card.vue';
 
 
 // import { computed, onMounted } from "vue";
@@ -80,6 +89,7 @@ import "vue-next-select/dist/index.css";
 export default {
     components: {
         'vue-select': VueNextSelect,
+        Card,
     },
     mixins: [],
     setup() {

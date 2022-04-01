@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import 'Navbar.scss';
 @import 'HomePage.scss';
+@import 'Card.scss';
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -29,6 +30,11 @@ a {
 
 h1, h2, h3, h4, h5, p {
 	margin: 0;
+}
+
+img {
+	display: block;
+	height: auto;
 }
 
 // CLASSES
