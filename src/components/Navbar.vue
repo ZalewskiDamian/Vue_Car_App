@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
        <div class="navbar__wrapper">
-           <nav class="navbar__navigation"></nav>
+           <nav class="navbar__navigation">Nav</nav>
        </div>
     </div>
 </template>
@@ -11,6 +11,7 @@
 // import { computed, onMounted } from "vue";
 
 export default {
+    name: "Navbar",
     components: {
     },
     mixins: [],

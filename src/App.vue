@@ -12,6 +12,7 @@ export default {
     name: "App",
     mixins: [],
     components: {
+        Navbar
     },
     data() {
         return {
