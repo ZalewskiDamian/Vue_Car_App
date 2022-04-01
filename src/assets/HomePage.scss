@@ -16,3 +16,68 @@
         background-position: 10px center;
     }
 }
+
+.filters {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    &__inner {
+        border-right: 1px solid #ede6e6;
+        padding: 15px;
+    }
+    &__title {
+        color: darkgrey;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    &__select {
+        width: 100%;
+        border: none;
+
+        .vue-input {
+            padding: 0;
+            
+            input {
+                font-size: 16px;
+                color: black;
+                font-weight: 700;
+                font-family: 'Montserrat', sans-serif;
+
+                &::placeholder {
+                    color: black;
+                    font-size: 16px;
+                }
+            }
+        }
+        .icon.arrow-downward {
+            border-color: black transparent transparent;
+        }
+    }
+    &__buttonWrapper {
+        justify-self: center;
+        align-self: center;
+    }
+    &__searchBtn {
+        background-color: #8D3131;
+        padding: 15px 35px;
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 3px 6px rgba(0,0,0, .16);
+        }
+    }
+}
