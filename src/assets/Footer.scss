@@ -2,4 +2,23 @@
     width: 100%;
     padding: 25px;
     background-color: #8D3131;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__iconsWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        align-items: center;
+    }
+    &__heading {
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+    }
+    &__icon {
+        max-width: 32px;
+    }
 }
