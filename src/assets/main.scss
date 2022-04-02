@@ -2,6 +2,8 @@
 @import 'Navbar.scss';
 @import 'HomePage.scss';
 @import 'Card.scss';
+@import 'Footer.scss';
+@import 'CarDetails.scss';
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -14,7 +16,8 @@ html, body {
 	line-height: 1.3;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #F6EDD8;
+	// background-color: #F6EDD8;
+	background-color: white;
 	color: black;
 }
 

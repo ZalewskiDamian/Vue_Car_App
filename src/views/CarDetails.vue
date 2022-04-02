@@ -1,0 +1,89 @@
+<template>
+    <div class="container">
+        <div class="details">
+            <div class="details__row">
+                <div class="details__gallery">
+                    <img src="../assets/images/card-template.jpg" alt="img">
+                </div>
+                <div class="details__description">
+                    <h2 class="details__heading">
+                        BMW M3
+                    </h2>
+                    <p class="details__price">
+                        PLN <span id="price">18 900</span>
+                    </p>
+                    <ul class="details__list">
+                        <li class="details__listItem">
+                            <img src="../assets/images/year-of-production-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Rok produkcji:</span>
+                            <span class="details__text">2020</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/engine-capacity-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Pojemność silnika:</span>
+                            <span class="details__text">1248cm³</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/fuel-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Rodzaj paliwa:</span>
+                            <span class="details__text">Benzyna</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/transmission-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Skrzynia biegów:</span>
+                            <span class="details__text">Manualna</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/doors-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Liczba drzwi:</span>
+                            <span class="details__text">5</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/capacity-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Liczba miejsc:</span>
+                            <span class="details__text">5</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/fuel-tank-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Pojemność baku:</span>
+                            <span class="details__text">50l</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/color-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Kolor:</span>
+                            <span class="details__text">Czarny</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/car-body-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Typ karoserii:</span>
+                            <span class="details__text">Sedan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="details__additionalInformation">
+                <h3 class="details__heading">
+                    Dodatkowe informacje:
+                </h3>
+                <p class="details__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati, est numquam repellat dolore quos itaque commodi expedita illum, cumque aliquam, neque fuga similique harum eum? Sed ratione atque voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, iure tenetur maxime aspernatur tempore at, fugit quo quisquam culpa, quas neque? Saepe blanditiis dignissimos, quia quasi dolores voluptate sit sed?
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+
+// import { computed, onMounted } from "vue";
+
+export default {
+    name: 'CarDetails',
+    components: {
+    },
+    mixins: [],
+    setup() {
+        
+    },
+};
+</script>

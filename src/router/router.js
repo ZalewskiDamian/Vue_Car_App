@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
+import CarDetails from "../views/CarDetails.vue";
 
 const routerHistory = createWebHistory();
 const router = createRouter({
@@ -9,6 +10,11 @@ const router = createRouter({
             path: '/',
             component: HomePage,
             name: 'Home Page',
+        },
+        {
+            path: '/carDetails',
+            component: CarDetails,
+            name: 'Car Details',
         },
     ],
     scrollBehavior() {

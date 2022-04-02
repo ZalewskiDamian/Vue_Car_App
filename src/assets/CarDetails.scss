@@ -1,0 +1,46 @@
+.details {
+    margin: 20px 0;
+
+    &__row {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-bottom: 30px;
+    }
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__heading {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    &__price {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #939393;
+    }
+    &__description {
+        text-align: left;
+    }
+    &__list {
+        padding: 10px 0;
+    }
+    &__listItem {
+        display: grid;
+        grid-template-columns: 24px 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #ebebeb;
+        }
+    }
+    &__paragraph {
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+}
