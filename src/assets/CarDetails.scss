@@ -70,6 +70,11 @@ padding: 10px;
     box-sizing: content-box;
     border: 5px solid white;
     background-color: #8D3131;
+    transition: all .35s ease-in-out;
+
+    &:hover {
+        border: 5px solid #8D3131;
+    }
 }
 
 .carousel__prev {
@@ -87,5 +92,110 @@ padding: 10px;
 
     button {
         margin: 0 5px;
+    }
+}
+
+// COMMENTS
+.comments {
+    margin: 10px 0;
+    max-width: 700px;
+
+    &__addWrapper {
+        border-radius: 8px;
+        border: 1px solid #8d3131;
+        background-color: #f6edd8;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    &__textarea {
+        width: 100%;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+        resize: none;
+        height: 100px;
+        border: none;
+        background-color: #f6edd8;
+    }
+    &__buttonGroup {
+        border-top: 1px solid #ffc3c3;
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__button {
+        background-color: #8D3131;
+        border-radius: 8px;
+        border: 0;
+        padding: 10px 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all .35s ease-in-out;
+
+        &:hover {
+            background-color: #bf5151;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__comment {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ffc3c3;
+        position: relative;
+
+        &Header {
+            display: grid;
+            grid-template-columns: 32px 1fr;
+            grid-gap: 15px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        &Name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &Bottom {
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &ReplyIcon {
+            max-width: 16px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+        &ReplyButton {
+            color: black;
+            font-weight: 600;
+            display: block;
+            margin-right: 10px;
+        }
+        &Date {
+            font-size: 14px;
+            color: gray;
+            font-weight: 500;
+        }
+    }
+    &__comment.reply {
+        margin-left: 50px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            transform: rotate(180deg);
+            top: 0;
+            left: -40px;
+            width: 32px;
+            height: 32px;
+            background-image: url(../assets/images/comment-reply-icon.png);
+            background-size: 100% 100%;
+        }
     }
 }

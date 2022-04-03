@@ -98,6 +98,63 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati, est numquam repellat dolore quos itaque commodi expedita illum, cumque aliquam, neque fuga similique harum eum? Sed ratione atque voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, iure tenetur maxime aspernatur tempore at, fugit quo quisquam culpa, quas neque? Saepe blanditiis dignissimos, quia quasi dolores voluptate sit sed?
                 </p>
             </div>
+            <div class="details__comments">
+                <h3 class="details__heading">
+                    Komentarze:
+                </h3>
+                <div class="comments">
+                    <div class="comments__addWrapper">
+                        <textarea name="addComment" id="" cols="30" rows="10" class="comments__textarea" placeholder="Napisz komentarz"></textarea>
+                        <div class="comments__buttonGroup">
+                            <button class="comments__button">Napisz</button>
+                        </div>
+                    </div>
+                    <div class="comments__wrapper">
+                        <div class="comments__comment">
+                            <div class="comments__commentHeader">
+                                <img src="../assets/images/comment-avatar.png" alt="avatar" class="comments__commentAvatar">
+                                <p class="comments__commentName">John Doe</p>
+                            </div>
+                            <p class="comments__commentText">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, aspernatur, sequi labore qui atque earum dolores harum, aliquam rem sint minus eos tempora amet facere magnam expedita. Impedit, recusandae nisi!
+                            </p>
+                            <div class="comments__commentBottom">
+                                <img src="../assets/images/comments-reply-button-icon.png" alt="icon" class="comments__commentReplyIcon">
+                                <a href="#" class="comments__commentReplyButton">Odpowiedz</a>
+                                <span class="comments__commentDate">20.10.2022 / 12:45</span>
+                            </div>
+                        </div>
+                        <div class="comments__comment reply">
+                            <div class="comments__commentHeader">
+                                <img src="../assets/images/comment-avatar.png" alt="avatar" class="comments__commentAvatar">
+                                <p class="comments__commentName">John Doe</p>
+                            </div>
+                            <p class="comments__commentText">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, aspernatur, sequi labore qui atque earum dolores harum, aliquam rem sint minus eos tempora amet facere magnam expedita. Impedit, recusandae nisi!
+                            </p>
+                            <div class="comments__commentBottom">
+                                <img src="../assets/images/comments-reply-button-icon.png" alt="icon" class="comments__commentReplyIcon">
+                                <a href="#" class="comments__commentReplyButton">Odpowiedz</a>
+                                <span class="comments__commentDate">20.10.2022 / 12:45</span>
+                            </div>
+                        </div>
+                        <div class="comments__comment">
+                            <div class="comments__commentHeader">
+                                <img src="../assets/images/comment-avatar.png" alt="avatar" class="comments__commentAvatar">
+                                <p class="comments__commentName">John Doe</p>
+                            </div>
+                            <p class="comments__commentText">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, aspernatur, sequi labore qui atque earum dolores harum, aliquam rem sint minus eos tempora amet facere magnam expedita. Impedit, recusandae nisi!
+                            </p>
+                            <div class="comments__commentBottom">
+                                <img src="../assets/images/comments-reply-button-icon.png" alt="icon" class="comments__commentReplyIcon">
+                                <a href="#" class="comments__commentReplyButton">Odpowiedz</a>
+                                <span class="comments__commentDate">20.10.2022 / 12:45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
