@@ -3,7 +3,31 @@
         <div class="details">
             <div class="details__row">
                 <div class="details__gallery">
-                    <img src="../assets/images/card-template.jpg" alt="img">
+                    <Carousel>
+                        <Slide v-for="slide in 10" :key="slide">
+                            <div class="carousel__item">
+                                <img src="../assets/images/card-template.jpg" alt="images">
+                            </div>
+                        </Slide>
+                        <Slide v-for="slide in 10" :key="slide">
+                            <div class="carousel__item">
+                                <img src="../assets/images/card-template.jpg" alt="images">
+                            </div>
+                        </Slide>
+                        <Slide v-for="slide in 10" :key="slide">
+                            <div class="carousel__item">
+                                <img src="../assets/images/card-template.jpg" alt="images">
+                            </div>
+                        </Slide>
+                        <template #addons>
+                            <Navigation />
+                        </template>
+                    </Carousel>
+                    <vue3-star-ratings 
+                        v-model="rating"
+                        starSize='25'
+                        controlBg='#8D3131'
+                    />
                 </div>
                 <div class="details__description">
                     <h2 class="details__heading">
@@ -22,6 +46,11 @@
                             <img src="../assets/images/engine-capacity-icon.png" alt="icon" class="details__listIcon">
                             <span class="details__text">Pojemność silnika:</span>
                             <span class="details__text">1248cm³</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/engine-type-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Typ silnika:</span>
+                            <span class="details__text">m50b25</span>
                         </li>
                         <li class="details__listItem">
                             <img src="../assets/images/fuel-icon.png" alt="icon" class="details__listIcon">
@@ -74,12 +103,19 @@
 </template>
 
 <script>
+import { Carousel, Navigation, Slide } from 'vue3-carousel';
+import vue3starRatings from "vue3-star-ratings";
 
+import 'vue3-carousel/dist/carousel.css';
 // import { computed, onMounted } from "vue";
 
 export default {
     name: 'CarDetails',
     components: {
+        "vue3-star-ratings": vue3starRatings,
+        Carousel,
+        Slide,
+        Navigation,
     },
     mixins: [],
     setup() {

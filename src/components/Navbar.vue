@@ -9,7 +9,12 @@
                    <a href="#" class="navbar__link">Serwis</a>
                </li>
                <li class="navbar__navItem">
-                   <a href="#" class="navbar__link">LOGO</a>
+                   <router-link
+                        to="/"
+                        class="navbar__link navbar__link--logo"
+                    >
+                        <img src="../assets/images/e34-logo.svg" alt="logo" class="navbar__logo">
+                    </router-link>
                </li>
                <li class="navbar__navItem">
                    <a href="#" class="navbar__link">Kontakt</a>

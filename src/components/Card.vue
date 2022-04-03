@@ -1,7 +1,12 @@
 <template>
     <div class="card">
         <div class="card__mask">
-            <a href="#" class="card__button">Zobacz więcej</a>
+            <router-link
+                to="/carDetails"
+                class="card__button"
+                >Zobacz więcej</router-link
+            >
+            <!-- <a href="#" class="card__button">Zobacz więcej</a> -->
         </div>
         <div class="card__imageWrapper">
             <img src="../assets/images/card-template.jpg" alt="car" class="card__image">

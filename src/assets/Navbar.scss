@@ -19,11 +19,18 @@
             background-color: #6c0e0e;
         }
     }
+    &__logo {
+        max-width: 80px;
+    }
     &__link {
         display: block;
         color: white;
         font-size: 18px;
         padding: 30px 20px;
+
+        &--logo {
+            padding: 10px 0;
+        }
     }
     &__btn {
         display: block;

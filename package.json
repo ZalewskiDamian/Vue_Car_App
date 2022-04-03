@@ -10,13 +10,14 @@
   "dependencies": {
     "axios": "^0.26.1",
     "core-js": "^3.8.3",
-    "lingallery": "^1.3.7",
     "sass": "^1.49.10",
     "sass-loader": "^12.6.0",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-next-select": "^2.10.4",
     "vue-router": "^4.0.14",
+    "vue3-carousel": "^0.1.38",
+    "vue3-star-ratings": "^1.1.0",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
