@@ -1,4 +1,8 @@
 <template>
+    <transition name="fade" mode="out-in">
+        <Login v-if="isLogin" @toggleLogin="toggleLogin"/>
+    </transition>
+
     <div class="navbar">
        <div class="navbar__wrapper">
            <ul class="navbar__nav">
@@ -23,20 +27,37 @@
                    <a href="#" class="navbar__link">O nas</a>
                </li>
            </ul>
-            <a href="#" class="navbar__btn">Zaloguj się</a>
+            <a href="#" class="navbar__btn" @click="toggleLogin">Zaloguj się</a>
        </div>
     </div>
 </template>
 
 <script>
-
+import Login from '../components/Login.vue';
+import { ref } from "vue";
 export default {
     name: "Navbar",
     components: {
+        Login
     },
     mixins: [],
     setup() {
+        let isLogin = ref(false);
+
+        const toggleLogin = () => {
+            isLogin.value = !isLogin.value;
+
+            if (isLogin.value) {
+                document.getElementsByTagName("html")[0].classList.add("no-scroll");
+            } else {
+                document.getElementsByTagName("html")[0].classList.remove("no-scroll");
+            }
+        };
         
+        return {
+            isLogin,
+            toggleLogin
+        }
     },
 };
 </script>

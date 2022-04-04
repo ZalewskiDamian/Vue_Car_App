@@ -4,6 +4,7 @@
 @import 'Card.scss';
 @import 'Footer.scss';
 @import 'CarDetails.scss';
+@import 'Login.scss';
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -18,6 +19,10 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #F6EDD8;
 	color: black;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 
 ul {
