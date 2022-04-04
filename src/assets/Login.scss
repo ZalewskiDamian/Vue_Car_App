@@ -6,7 +6,7 @@
     left: 0;
     background: url("../assets/images/headslider5.jpg");
     background-size: 100%;
-    z-index: 101;
+    z-index: 109;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -25,7 +25,7 @@
         display: block;
         margin: 5px;
         width: 360px;
-        margin: 20px;
+        margin: 25px;
         font-weight: bold;
         font-size: 30px;
         text-align: center;
@@ -42,6 +42,7 @@
         font-weight: bold;
         font-size: 16px;
         cursor: pointer;
+        text-decoration: underline;
 
         &:hover {
             color: #000;
@@ -64,12 +65,14 @@
         width: 190px;
         margin: auto;
         display: block;
-        border: 1px solid;
-        letter-spacing: 2px;
+        border: 2px solid;
+        letter-spacing: 1.5px;
         border-radius: 13px;
+        font-weight: bold;
         cursor: pointer;
         transition: 0.3s all;
         line-height: 28px;
+        margin-bottom: 50px;
 
         &:hover {
             background: #090a0d;
@@ -79,11 +82,13 @@
     &__title {
         font-size: 46px;
         text-align: center;
+        margin-bottom: 40px;
     }   
 
     &__shadow {
         background: rgb(208 18 18 / 50%);
         padding: 40px 20px;
+        box-shadow: 0 0 10px 3px #6d0f10;
     }
 
     &__close {

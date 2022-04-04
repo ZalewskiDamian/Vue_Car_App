@@ -1,7 +1,10 @@
 .navbar {
     width: 100%;
-    background-color: #8D3131;
+    background: rgb(156 20 18 / 95%);
     padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 101;
 
     &__wrapper {
         display: flex;
@@ -29,18 +32,24 @@
         padding: 30px 20px;
 
         &--logo {
-            padding: 10px 0;
+            padding: 10px 40px;
         }
     }
     &__btn {
         display: block;
         color: black;
-        background-color: white;
-        padding: 10px 15px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 5px 15px;
         font-weight: 500;
         border-radius: 4px;
         flex-shrink: 0;
         transition: all .2s ease-in-out;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: monospace;
 
         &:hover {
             background-color: black;

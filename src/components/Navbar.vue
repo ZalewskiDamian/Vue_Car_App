@@ -27,7 +27,7 @@
                    <a href="#" class="navbar__link">O nas</a>
                </li>
            </ul>
-            <a href="#" class="navbar__btn" @click="toggleLogin">Zaloguj się</a>
+            <a class="navbar__btn" @click="toggleLogin">Zaloguj</a>
        </div>
     </div>
 </template>

@@ -27,6 +27,7 @@
     grid-template-columns: repeat(6, 1fr);
     position: relative;
     z-index: 99;
+    box-shadow: 0 0 20px 3px #000;
 
     &__inner {
         border-right: 1px solid #ede6e6;
