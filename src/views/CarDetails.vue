@@ -3,7 +3,7 @@
         <div class="details">
             <div class="details__row">
                 <div class="details__gallery">
-                    <Carousel>
+                    <Carousel :wrap-around="true">
                         <Slide v-for="slide in 10" :key="slide">
                             <div class="carousel__item">
                                 <img src="../assets/images/card-template.jpg" alt="images">

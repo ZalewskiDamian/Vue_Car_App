@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="footer__content">
             <p class="footer__heading">
-                CLASSIC CARS GRANADA 2016
+                E34.pl 2022
             </p>
             <div class="footer__iconsWrapper">
                 <a href="#" class="footer__link">

@@ -20,11 +20,13 @@
 .filters {
     width: 100%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: -70px auto 20px auto;
     background-color: white;
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    z-index: 99;
 
     &__inner {
         border-right: 1px solid #ede6e6;
@@ -87,4 +89,23 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fill, 350px);
     grid-gap: 15px;
+}
+
+
+.home {
+    .carousel { 
+        &__slide {
+            padding: 0;
+        }
+
+        &__item {
+            height: 450px;
+            padding: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
 }
