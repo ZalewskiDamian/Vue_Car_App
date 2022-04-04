@@ -17,6 +17,73 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    &__input {
+        height: 50px;
+        display: block;
+        margin: 5px;
+        width: 360px;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 40px;
+        outline: none;
+        border: 0;
+    }
+
+    &__button-register {
+        background: transparent;
+        border: 0;
+        color: #fff;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__p {
+        text-align: center;
+        display: block;
+        margin: 20px;
+    }
+
+    &__submit {
+        background: transparent;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        font-family: monospace;
+        width: 190px;
+        margin: auto;
+        display: block;
+        border: 1px solid;
+        letter-spacing: 2px;
+        border-radius: 13px;
+        cursor: pointer;
+        transition: 0.3s all;
+        line-height: 28px;
+
+        &:hover {
+            background: #090a0d;
+        }
+    }
+
+    &__title {
+        font-size: 46px;
+        text-align: center;
+    }   
+
+    &__shadow {
+        background: rgb(208 18 18 / 50%);
+        padding: 40px 20px;
     }
 
     &__close {
@@ -28,6 +95,11 @@
         top: 20px;
         cursor: pointer;
         font-size: 28px;
+        transition: 0.3s all;
+
+        &:hover {
+            color: #c10002;
+        }
     }
 }
 
