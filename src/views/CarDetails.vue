@@ -6,17 +6,17 @@
                     <Carousel :wrap-around="true">
                         <Slide v-for="slide in 10" :key="slide">
                             <div class="carousel__item">
-                                <img src="../assets/images/card-template.jpg" alt="images">
+                                <img src="../assets/images/card-template.jpg" alt="images" class="carousel__img">
                             </div>
                         </Slide>
                         <Slide v-for="slide in 10" :key="slide">
                             <div class="carousel__item">
-                                <img src="../assets/images/card-template.jpg" alt="images">
+                                <img src="../assets/images/card-template.jpg" alt="images" class="carousel__img">
                             </div>
                         </Slide>
                         <Slide v-for="slide in 10" :key="slide">
                             <div class="carousel__item">
-                                <img src="../assets/images/card-template.jpg" alt="images">
+                                <img src="../assets/images/card-template.jpg" alt="images" class="carousel__img">
                             </div>
                         </Slide>
                         <template #addons>
@@ -24,14 +24,14 @@
                         </template>
                     </Carousel>
                     <div class="details__rating">
-                        <p class="details__ratingResult">
-                            4.5 (52 głosy)
-                        </p>
                         <vue3-star-ratings 
                             v-model="rating"
                             starSize='25'
                             controlBg='#8D3131'
                         />
+                        <p class="details__ratingResult">
+                            4.5 (52 głosy)
+                        </p>
                     </div>
                 </div>
                 <div class="details__description">
@@ -96,39 +96,18 @@
                             <span class="details__text">Typ karoserii:</span>
                             <span class="details__text">Sedan</span>
                         </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/vin-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">VIN:</span>
+                            <span class="details__text">KSX742SJDW</span>
+                        </li>
+                        <li class="details__listItem">
+                            <img src="../assets/images/car-course-icon.png" alt="icon" class="details__listIcon">
+                            <span class="details__text">Przebieg:</span>
+                            <span class="details__text">200 tys.</span>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="details__moreInfo">
-                <h3 class="details__heading">
-                    Dodatkowe informacje:
-                </h3>
-                <ul class="details__moreInfoList">
-                    <li class="details__moreInfoListItem">
-                        <span class="details__text">Przebieg:</span>
-                        <span class="details__text">200 tys.</span>
-                    </li>
-                    <li class="details__moreInfoListItem">
-                        <span class="details__text">VIN:</span>
-                        <span class="details__text">KSX742SJDW</span>
-                    </li>
-                    <li class="details__moreInfoListItem">
-                        <span class="details__text">Napęd:</span>
-                        <span class="details__text">Na tylne koła</span>
-                    </li>
-                    <li class="details__moreInfoListItem">
-                        <span class="details__text">Kraj pochodzenia:</span>
-                        <span class="details__text">Polska</span>
-                    </li>
-                    <li class="details__moreInfoListItem">
-                        <span class="details__text">Bezwypadkowy:</span>
-                        <span class="details__text">Tak</span>
-                    </li>
-                    <li class="details__moreInfoListItem">
-                        <span class="details__text">Stan:</span>
-                        <span class="details__text">Używane</span>
-                    </li>
-                </ul>
             </div>
             <div class="details__features">
                 <h3 class="details__heading">
@@ -158,6 +137,15 @@
                     <li class="details__featuresListItem">Poduszka powietrzna pasażera</li>
                     <li class="details__featuresListItem">Wspomaganie kierownicy</li>
                 </ul>
+            </div>
+            <div class="details__moreInfo">
+                <h3 class="details__heading">
+                    Opis:
+                </h3>
+                <p class="details__paragraph">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est, quas quos distinctio dolores omnis repudiandae tempore perferendis architecto corrupti quisquam, deserunt dolor dolorum at? Iure iste totam perferendis a?
+                    Rerum omnis illum cupiditate facilis ipsum quod delectus magni excepturi sequi ad voluptatibus obcaecati, exercitationem corrupti adipisci porro sint aliquam. Reprehenderit dolore dolorum ab corrupti quo quidem iste doloremque veritatis.
+                </p>
             </div>
             <div class="details__comments">
                 <h3 class="details__heading">
