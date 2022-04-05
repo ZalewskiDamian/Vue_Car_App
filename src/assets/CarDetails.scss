@@ -14,9 +14,6 @@
         width: 100%;
         padding: 0 50px;
     }
-    &__features {
-        margin-bottom: 20px;
-    }
     &__heading {
         font-size: 32px;
         margin-bottom: 5px;
@@ -65,10 +62,11 @@
         font-weight: 500;
         margin-left: 10px;
     }
+    &__moreInfo {
+        padding-right: 40px;
+    }
     &__featuresList {
         margin: 10px 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
     }
     &__featuresListItem {
         margin-bottom: 5px;

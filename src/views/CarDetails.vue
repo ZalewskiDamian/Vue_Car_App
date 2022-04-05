@@ -109,43 +109,36 @@
                     </ul>
                 </div>
             </div>
-            <div class="details__features">
-                <h3 class="details__heading">
-                    Wyposażenie
-                </h3>
-                <ul class="details__featuresList">
-                    <li class="details__featuresListItem">ABS</li>
-                    <li class="details__featuresListItem">CD</li>
-                    <li class="details__featuresListItem">Elektrycznie ustawiane lusterka</li>
-                    <li class="details__featuresListItem">Gniazdo USB</li>
-                    <li class="details__featuresListItem">Klimatyzacja manualna</li>
-                    <li class="details__featuresListItem">Podgrzewane lusterka boczne</li>
-                    <li class="details__featuresListItem">Poduszki boczne przednie</li>
-                    <li class="details__featuresListItem">Wielofunkcyjna kierownica</li>
-                    <li class="details__featuresListItem">Alarm</li>
-                    <li class="details__featuresListItem">Centralny zamek</li>
-                    <li class="details__featuresListItem">ESP (stabilizacja toru jazdy)</li>
-                    <li class="details__featuresListItem">Isofix</li>
-                    <li class="details__featuresListItem">MP3</li>
-                    <li class="details__featuresListItem">Poduszka powietrzna kierowcy</li>
-                    <li class="details__featuresListItem">Radio fabryczne</li>
-                    <li class="details__featuresListItem">ASR (kontrola trakcji)</li>
-                    <li class="details__featuresListItem">Elektryczne szyby przednie</li>
-                    <li class="details__featuresListItem">Gniazdo AUX</li>
-                    <li class="details__featuresListItem">Immobilizer</li>
-                    <li class="details__featuresListItem">Kurtyny powietrzne</li>
-                    <li class="details__featuresListItem">Poduszka powietrzna pasażera</li>
-                    <li class="details__featuresListItem">Wspomaganie kierownicy</li>
-                </ul>
-            </div>
-            <div class="details__moreInfo">
-                <h3 class="details__heading">
-                    Opis:
-                </h3>
-                <p class="details__paragraph">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est, quas quos distinctio dolores omnis repudiandae tempore perferendis architecto corrupti quisquam, deserunt dolor dolorum at? Iure iste totam perferendis a?
-                    Rerum omnis illum cupiditate facilis ipsum quod delectus magni excepturi sequi ad voluptatibus obcaecati, exercitationem corrupti adipisci porro sint aliquam. Reprehenderit dolore dolorum ab corrupti quo quidem iste doloremque veritatis.
-                </p>
+            <div class="details__row">
+                <div class="details__moreInfo">
+                    <h3 class="details__heading">
+                        Opis:
+                    </h3>
+                    <p class="details__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est, quas quos distinctio dolores omnis repudiandae tempore perferendis architecto corrupti quisquam, deserunt dolor dolorum at? Iure iste totam perferendis a?
+                        Rerum omnis illum cupiditate facilis ipsum quod delectus magni excepturi sequi ad voluptatibus obcaecati, exercitationem corrupti adipisci porro sint aliquam. Reprehenderit dolore dolorum ab corrupti quo quidem iste doloremque veritatis.
+                    </p>
+                    <p class="details__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est, quas quos distinctio dolores omnis repudiandae tempore perferendis architecto corrupti quisquam, deserunt dolor dolorum at? Iure iste totam perferendis a?
+                        Rerum omnis illum cupiditate facilis ipsum quod delectus magni excepturi sequi ad voluptatibus obcaecati, exercitationem corrupti adipisci porro sint aliquam. Reprehenderit dolore dolorum ab corrupti quo quidem iste doloremque veritatis.
+                    </p>
+                </div>
+                <div class="details__features">
+                    <h3 class="details__heading">
+                        Wyposażenie
+                    </h3>
+                    <ul class="details__featuresList">
+                        <li class="details__featuresListItem">ABS</li>
+                        <li class="details__featuresListItem">CD</li>
+                        <li class="details__featuresListItem">Elektrycznie ustawiane lusterka</li>
+                        <li class="details__featuresListItem">Gniazdo USB</li>
+                        <li class="details__featuresListItem">Klimatyzacja manualna</li>
+                        <li class="details__featuresListItem">Podgrzewane lusterka boczne</li>
+                        <li class="details__featuresListItem">Poduszki boczne przednie</li>
+                        <li class="details__featuresListItem">Wielofunkcyjna kierownica</li>
+                        <li class="details__featuresListItem">Alarm</li>
+                    </ul>
+                </div>
             </div>
             <div class="details__comments">
                 <h3 class="details__heading">
