@@ -1,5 +1,6 @@
 <template>
     <div class="card">
+        <div class="card__badge">SPRZEDAŻ</div>
         <div class="card__mask">
             <router-link
                 to="/carDetails"

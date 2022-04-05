@@ -23,11 +23,16 @@
                             <Navigation />
                         </template>
                     </Carousel>
-                    <vue3-star-ratings 
-                        v-model="rating"
-                        starSize='25'
-                        controlBg='#8D3131'
-                    />
+                    <div class="details__rating">
+                        <p class="details__ratingResult">
+                            4.5 (52 głosy)
+                        </p>
+                        <vue3-star-ratings 
+                            v-model="rating"
+                            starSize='25'
+                            controlBg='#8D3131'
+                        />
+                    </div>
                 </div>
                 <div class="details__description">
                     <h2 class="details__heading">
@@ -36,6 +41,10 @@
                     <p class="details__price">
                         PLN <span id="price">18 900</span>
                     </p>
+                    <div class="details__location">
+                        <img src="../assets/images/location-icon.png" alt="pin">
+                        <p class="details__paragraph">Siedlce, Mazowieckie</p>
+                    </div>
                     <ul class="details__list">
                         <li class="details__listItem">
                             <img src="../assets/images/year-of-production-icon.png" alt="icon" class="details__listIcon">
@@ -90,13 +99,65 @@
                     </ul>
                 </div>
             </div>
-            <div class="details__additionalInformation">
+            <div class="details__moreInfo">
                 <h3 class="details__heading">
                     Dodatkowe informacje:
                 </h3>
-                <p class="details__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati, est numquam repellat dolore quos itaque commodi expedita illum, cumque aliquam, neque fuga similique harum eum? Sed ratione atque voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, iure tenetur maxime aspernatur tempore at, fugit quo quisquam culpa, quas neque? Saepe blanditiis dignissimos, quia quasi dolores voluptate sit sed?
-                </p>
+                <ul class="details__moreInfoList">
+                    <li class="details__moreInfoListItem">
+                        <span class="details__text">Przebieg:</span>
+                        <span class="details__text">200 tys.</span>
+                    </li>
+                    <li class="details__moreInfoListItem">
+                        <span class="details__text">VIN:</span>
+                        <span class="details__text">KSX742SJDW</span>
+                    </li>
+                    <li class="details__moreInfoListItem">
+                        <span class="details__text">Napęd:</span>
+                        <span class="details__text">Na tylne koła</span>
+                    </li>
+                    <li class="details__moreInfoListItem">
+                        <span class="details__text">Kraj pochodzenia:</span>
+                        <span class="details__text">Polska</span>
+                    </li>
+                    <li class="details__moreInfoListItem">
+                        <span class="details__text">Bezwypadkowy:</span>
+                        <span class="details__text">Tak</span>
+                    </li>
+                    <li class="details__moreInfoListItem">
+                        <span class="details__text">Stan:</span>
+                        <span class="details__text">Używane</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="details__features">
+                <h3 class="details__heading">
+                    Wyposażenie
+                </h3>
+                <ul class="details__featuresList">
+                    <li class="details__featuresListItem">ABS</li>
+                    <li class="details__featuresListItem">CD</li>
+                    <li class="details__featuresListItem">Elektrycznie ustawiane lusterka</li>
+                    <li class="details__featuresListItem">Gniazdo USB</li>
+                    <li class="details__featuresListItem">Klimatyzacja manualna</li>
+                    <li class="details__featuresListItem">Podgrzewane lusterka boczne</li>
+                    <li class="details__featuresListItem">Poduszki boczne przednie</li>
+                    <li class="details__featuresListItem">Wielofunkcyjna kierownica</li>
+                    <li class="details__featuresListItem">Alarm</li>
+                    <li class="details__featuresListItem">Centralny zamek</li>
+                    <li class="details__featuresListItem">ESP (stabilizacja toru jazdy)</li>
+                    <li class="details__featuresListItem">Isofix</li>
+                    <li class="details__featuresListItem">MP3</li>
+                    <li class="details__featuresListItem">Poduszka powietrzna kierowcy</li>
+                    <li class="details__featuresListItem">Radio fabryczne</li>
+                    <li class="details__featuresListItem">ASR (kontrola trakcji)</li>
+                    <li class="details__featuresListItem">Elektryczne szyby przednie</li>
+                    <li class="details__featuresListItem">Gniazdo AUX</li>
+                    <li class="details__featuresListItem">Immobilizer</li>
+                    <li class="details__featuresListItem">Kurtyny powietrzne</li>
+                    <li class="details__featuresListItem">Poduszka powietrzna pasażera</li>
+                    <li class="details__featuresListItem">Wspomaganie kierownicy</li>
+                </ul>
             </div>
             <div class="details__comments">
                 <h3 class="details__heading">
