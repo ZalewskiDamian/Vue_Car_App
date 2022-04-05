@@ -63,7 +63,21 @@
         margin-left: 10px;
     }
     &__moreInfo {
-        padding-right: 40px;
+        padding-right: 60px;
+    }
+    &__features {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            left: -40px;
+            height: 90%;
+            width: 1px;
+            background-color: #e5d6b3;
+        }
     }
     &__featuresList {
         margin: 10px 0;
@@ -114,6 +128,13 @@
     &:hover {
         border: 5px solid #8D3131;
     }
+}
+
+.carousel__prev {
+    left: 20px;
+}
+.carousel__next {
+    right: 20px;
 }
 
 // STAR RATING
