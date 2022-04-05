@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import CarDetails from "../views/CarDetails.vue";
+import UserPanel from "../views/UserPanel.vue";
 
 const routerHistory = createWebHistory();
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
             path: '/carDetails',
             component: CarDetails,
             name: 'Car Details',
+        },
+        {
+            path: '/userPanel',
+            component: UserPanel,
+            name: 'User Panel',
         },
     ],
     scrollBehavior() {
