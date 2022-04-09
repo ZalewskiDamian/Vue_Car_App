@@ -1,6 +1,6 @@
 <template>
     <div class="notice">
-        <h3 class="notice__title">Dodaj ogłoszenie</h3>
+        <h3 class="notice__title">Dodaj auto</h3>
         <div class="notice__form">
             <h4 class="notice__subtitle">
                 Specyfikacja auta

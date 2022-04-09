@@ -1,8 +1,8 @@
 <template>
     <div class="header">
         <div class="header__menu">
-            <button class="header__menuBtn" @click="currentTabComponent = 'Tab1'">Dodaj ogłoszenie</button>
-            <button class="header__menuBtn" @click="currentTabComponent = 'Tab2'">Moje ogłoszenia</button>
+            <button class="header__menuBtn" @click="currentTabComponent = 'Tab1'">Dodaj auto</button>
+            <button class="header__menuBtn" @click="currentTabComponent = 'Tab2'">Moje auta</button>
         </div>
         <keep-alive>
             <div class="container">
