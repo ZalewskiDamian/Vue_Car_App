@@ -99,6 +99,45 @@
             background-size: 100% 100%;
         }
     }
+    &__author {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            left: -40px;
+            height: 90%;
+            width: 1px;
+            background-color: #e5d6b3;
+        }
+
+        &Row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+        &Avatar {
+            max-width: 128px;
+        }
+        &TextWrapper {
+            padding-left: 20px;
+        }
+        &Nick {
+            display: block;
+            font-size: 22px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        &Text {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 // CAROUSEL GALLERY
@@ -153,6 +192,7 @@
 // COMMENTS
 .comments {
     margin: 10px 0;
+    padding-right: 60px;
 
     &__addWrapper {
         border-radius: 8px;
@@ -200,8 +240,11 @@
         width: 100%;
         margin-bottom: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #ffc3c3;
         position: relative;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #ffc3c3;
+        }
 
         &Header {
             display: grid;
@@ -238,14 +281,14 @@
         }
     }
     &__comment.reply {
-        margin-left: 50px;
+        padding-left: 50px;
 
         &::before {
             content: '';
             position: absolute;
             transform: rotate(180deg);
             top: 0;
-            left: -40px;
+            left: 0;
             width: 32px;
             height: 32px;
             background-image: url(../assets/images/comment-reply-icon.png);
