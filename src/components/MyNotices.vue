@@ -11,6 +11,15 @@
                     </div>
                     <div class="userNotices__cardContent">
                         <p class="userNotices__cardTitle">BMW M3</p>
+                        <p class="userNotices__cardText">
+                            Liczba wyświetleń: <span id="views-amount">1920</span>
+                        </p>
+                        <p class="userNotices__cardText">
+                            Liczba głosów: <span id="views-amount">54</span>
+                        </p>
+                        <p class="userNotices__cardText">
+                            Średnia głosów: <span id="views-amount">4.8</span>
+                        </p>
                         <div class="userNotices__cardButtonGroup">
                             <a href="#" class="userNotices__cardButton">Edytuj ogłoszenie</a>
                             <a href="#" class="userNotices__cardButton">Usuń</a>
@@ -23,6 +32,15 @@
                     </div>
                     <div class="userNotices__cardContent">
                         <p class="userNotices__cardTitle">BMW M3</p>
+                        <p class="userNotices__cardText">
+                            Liczba wyświetleń: <span id="views-amount">1920</span>
+                        </p>
+                        <p class="userNotices__cardText">
+                            Liczba głosów: <span id="views-amount">54</span>
+                        </p>
+                        <p class="userNotices__cardText">
+                            Średnia głosów: <span id="views-amount">4.8</span>
+                        </p>
                         <div class="userNotices__cardButtonGroup">
                             <a href="#" class="userNotices__cardButton">Edytuj ogłoszenie</a>
                             <a href="#" class="userNotices__cardButton">Usuń</a>
