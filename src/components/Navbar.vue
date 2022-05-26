@@ -5,6 +5,11 @@
 
     <div class="navbar">
        <div class="navbar__wrapper">
+           <div class="navbar__col">
+                <router-link to="/">
+                    <img src="../assets/images/e34-logo.svg" alt="logo" class="navbar__logo">
+                </router-link>
+           </div>
            <ul class="navbar__nav">
                <li class="navbar__navItem">
                    <a href="#" class="navbar__link">Samochody</a>
@@ -13,21 +18,17 @@
                    <a href="#" class="navbar__link">Serwis</a>
                </li>
                <li class="navbar__navItem">
-                   <router-link
-                        to="/"
-                        class="navbar__link navbar__link--logo"
-                    >
-                        <img src="../assets/images/e34-logo.svg" alt="logo" class="navbar__logo">
-                    </router-link>
-               </li>
-               <li class="navbar__navItem">
                    <a href="#" class="navbar__link">Kontakt</a>
                </li>
                <li class="navbar__navItem">
                    <a href="#" class="navbar__link">O nas</a>
                </li>
            </ul>
-            <a class="navbar__btn" @click="toggleLogin">Zaloguj</a>
+           <div class="navbar__col navbar__col--button">
+               <a class="navbar__btn" @click="toggleLogin">Zaloguj</a>
+               <img src="../assets/images/hamburger-icon.png" alt="hamburger" class="navbar__hamburger" @click="toggleMenu">
+               <img src="../assets/images/hamburger-close-icon.png" alt="hamburger" class="navbar__hamburger-close" @click="toggleMenu">
+           </div>
        </div>
     </div>
 </template>
@@ -43,6 +44,7 @@ export default {
     mixins: [],
     setup() {
         let isLogin = ref(false);
+        let isMenuOpen = ref(false);
 
         const toggleLogin = () => {
             isLogin.value = !isLogin.value;
@@ -53,10 +55,27 @@ export default {
                 document.getElementsByTagName("html")[0].classList.remove("no-scroll");
             }
         };
+
+        const toggleMenu = () => {
+            isMenuOpen.value = !isMenuOpen.value;
+
+            if (isMenuOpen.value) {
+                document.querySelector(".navbar__nav").classList.add("active");
+                document.querySelector(".navbar__hamburger").style.display = "none";
+                document.querySelector(".navbar__hamburger-close").style.display = "block";
+            } else {
+                document.querySelector(".navbar__nav").classList.remove("active");
+                document.querySelector(".navbar__hamburger").style.display = "block";
+                document.querySelector(".navbar__hamburger-close").style.display = "none";
+            }
+              
+        }
         
         return {
             isLogin,
-            toggleLogin
+            toggleLogin,
+            isMenuOpen,
+            toggleMenu
         }
     },
 };

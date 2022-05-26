@@ -21,7 +21,7 @@
                             Średnia głosów: <span id="views-amount">4.8</span>
                         </p>
                         <div class="userNotices__cardButtonGroup">
-                            <a href="#" class="userNotices__cardButton">Edytuj ogłoszenie</a>
+                            <a href="#" class="userNotices__cardButton">Edytuj</a>
                             <a href="#" class="userNotices__cardButton">Usuń</a>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             Średnia głosów: <span id="views-amount">4.8</span>
                         </p>
                         <div class="userNotices__cardButtonGroup">
-                            <a href="#" class="userNotices__cardButton">Edytuj ogłoszenie</a>
+                            <a href="#" class="userNotices__cardButton">Edytuj</a>
                             <a href="#" class="userNotices__cardButton">Usuń</a>
                         </div>
                     </div>

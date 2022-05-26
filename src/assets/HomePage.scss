@@ -23,11 +23,19 @@
     margin: -70px auto 20px auto;
     background-color: white;
     border-radius: 8px;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
     z-index: 99;
     box-shadow: 0 0 20px 3px #000;
+
+    @media (min-width: 525px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
 
     &__inner {
         border-right: 1px solid #ede6e6;
@@ -88,8 +96,12 @@
 .cars-wrapper {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 15px;
+
+    @media (min-width: 375px) {
+        grid-template-columns: repeat(auto-fill, 335px);
+    }
 }
 
 

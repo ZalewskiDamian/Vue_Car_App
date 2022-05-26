@@ -56,6 +56,7 @@ export default {
     position: relative;
     padding-left: 10px;
     cursor: pointer;
+    text-align: left;
 }
 .checkmark::before {
     content: '';

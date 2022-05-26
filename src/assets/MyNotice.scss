@@ -20,8 +20,12 @@
         border: 1px solid #af8f46;
         border-radius: 4px;
         display: grid;
-        grid-template-columns: 270px 1fr;
+        grid-template-columns: repeat(1, 1fr);
         margin-bottom: 15px;
+
+        @media (min-width: 625px) {
+            grid-template-columns: 270px 1fr;
+        }
 
         &Image {
             width: 100%;
@@ -55,6 +59,7 @@
             padding: 10px 20px;
             color: white;
             font-weight: 600;
+            text-align: center;
             font-size: 16px;
             cursor: pointer;
             transition: all 0.35s ease-in-out;
